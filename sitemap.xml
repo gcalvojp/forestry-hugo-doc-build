@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/foo/</loc>
+    <lastmod>2018-11-18T15:04:57+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/</loc>
     <lastmod>2018-11-18T15:03:25+00:00</lastmod>
   </url>

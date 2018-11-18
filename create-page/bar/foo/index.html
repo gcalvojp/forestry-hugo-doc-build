@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2018-11-18T15:05:29 UTC">
-<title>expand :: DocDock Documentation</title>
+<title>Foo :: DocDock Documentation</title>
 <link rel="shortcut icon" href="/forestry-hugo-doc-build/images/favicon.png" type="image/x-icon" />
 <link href="/forestry-hugo-doc-build/css/font-awesome.min.css" rel="stylesheet">
 <link href="/forestry-hugo-doc-build/css/nucleus.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/forestry-hugo-doc-build/shortcodes/expand/">
+  <body data-url="/forestry-hugo-doc-build/create-page/bar/foo/">
     
       <header>
   <div class="logo">
@@ -98,13 +98,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/forestry-hugo-doc-build/create-page/" class="dd-item haschildren
+    <li data-nav-id="/forestry-hugo-doc-build/create-page/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/forestry-hugo-doc-build/create-page/"><i class='fa fa-edit' ></i> Create Page</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/forestry-hugo-doc-build/create-page/"><i class='fa fa-edit' ></i> Create Page</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/forestry-hugo-doc-build/create-page/bar/foo/" class="dd-item">
+      <li data-nav-id="/forestry-hugo-doc-build/create-page/bar/foo/" class="dd-item active">
         <div>
           <a href="/forestry-hugo-doc-build/create-page/bar/foo/">
             Foo
@@ -192,11 +193,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/forestry-hugo-doc-build/shortcodes/" class="dd-item parent haschildren
+    <li data-nav-id="/forestry-hugo-doc-build/shortcodes/" class="dd-item haschildren
         ">
       <div>
-      <a href="/forestry-hugo-doc-build/shortcodes/">Shortcodes</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/forestry-hugo-doc-build/shortcodes/">Shortcodes</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/forestry-hugo-doc-build/shortcodes/alert/" class="dd-item">
@@ -308,7 +308,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/forestry-hugo-doc-build/shortcodes/expand/" class="dd-item active">
+      <li data-nav-id="/forestry-hugo-doc-build/shortcodes/expand/" class="dd-item">
         <div>
           <a href="/forestry-hugo-doc-build/shortcodes/expand/">
             expand
@@ -390,26 +390,17 @@
       <option value="/forestry-hugo-doc-build/getting-start/configuration/" >- Configuration</option>
   
     <option value="/forestry-hugo-doc-build/create-page/" >
-   Create Page</option>
+   Create Page</option> 
+      <option value="/forestry-hugo-doc-build/create-page/bar/foo/"  selected>- Foo</option>
+      <option value="/forestry-hugo-doc-build/create-page/foo/bar/" >- bar</option>
+      <option value="/forestry-hugo-doc-build/create-page/homepage/" >- Home page</option>
+      <option value="/forestry-hugo-doc-build/create-page/page-images/" >- About images</option>
+      <option value="/forestry-hugo-doc-build/create-page/page-slide/" >- Present a Slide</option>
+  
     <option value="/forestry-hugo-doc-build/content-organisation/" >
    Content Organization</option>
     <option value="/forestry-hugo-doc-build/shortcodes/" >
-   Shortcodes</option> 
-      <option value="/forestry-hugo-doc-build/shortcodes/alert/" >- alert</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/attachments/" >- attachments</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/button/" >- button</option>
-    <option value="/forestry-hugo-doc-build/shortcodes/children/" >
-  - 
-   children</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/excerpt/" >- excerpt</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/excerpt-include/" >- excerpt-include</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/expand/"  selected>- expand</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/icon/" >- icon</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/mermaid/" >- mermaid</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/notice/" >- notice</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/panel/" >- panel</option>
-      <option value="/forestry-hugo-doc-build/shortcodes/revealjs/" >- revealjs</option>
-  
+   Shortcodes</option>
     <option value="/forestry-hugo-doc-build/search/" >
    About the Search Engine</option>
 
@@ -434,96 +425,19 @@
       </div>
     
 
-    <h1>expand</h1>
+    <h1>Foo</h1>
     
     
     
-    
-
-<p>The Expand shortcode displays an expandable/collapsible section of text on your page.
-Here is an example</p>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
-        <span>
-        
-        
-        Expand me...
-        
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </div>
-</div>
-
-<h2 id="usage">Usage</h2>
-
-<p>this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is &ldquo;Expand me&hellip;&rdquo;)</p>
-
-<pre><code>{{%expand &quot;Is this docdock theme rocks ?&quot; %}}Yes !.{{% /expand%}}
-</code></pre>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
-        <span>
-        
-        
-        Is this docdock theme rocks ?
-        
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-Yes !
-    </div>
-</div>
-
-<h1 id="demo">Demo</h1>
-
-<pre><code>{{%expand%}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{% /expand%}}
-</code></pre>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
-        <span>
-        
-        
-        Expand me...
-        
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </div>
-</div>
+    <p>Foo foo foooooo</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/forestry-hugo-doc-build/shortcodes/excerpt-include/" title="excerpt-include"> <i class="fa fa-chevron-left"></i><label>excerpt-include</label></a>
-    <a class="nav nav-next" href="/forestry-hugo-doc-build/shortcodes/icon/" title="icon" style="margin-right: 0px;"><label>icon</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/forestry-hugo-doc-build/create-page/" title="Create Page"> <i class="fa fa-chevron-left"></i><label>Create Page</label></a>
+    <a class="nav nav-next" href="/forestry-hugo-doc-build/create-page/foo/bar/" title="bar" style="margin-right: 0px;"><label>bar</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -537,10 +451,14 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
 
     
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 18/11/2018
+    </div>
+    
 
     
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/shortcodes/expand.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/create-page/bar/foo.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     
