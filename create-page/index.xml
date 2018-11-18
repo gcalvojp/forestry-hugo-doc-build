@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>Foo</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/foo/</link>
-      <pubDate>Sun, 18 Nov 2018 15:04:57 +0000</pubDate>
+      <title>_index</title>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/</link>
+      <pubDate>Sun, 18 Nov 2018 15:16:09 +0000</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/foo/</guid>
-      <description>Foo foo foooooo</description>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/</guid>
+      <description>Yes
+ Yes</description>
     </item>
     
     <item>
