@@ -6,10 +6,20 @@
     <description>Recent content in DocDock Theme for Hugo on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 18:36:24 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 18 Nov 2018 15:24:31 +0000</lastBuildDate>
     
 	<atom:link href="https://gcalvojp.github.io/forestry-hugo-doc-build/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Foo Menu</title>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/</link>
+      <pubDate>Sun, 18 Nov 2018 15:24:31 +0000</pubDate>
+      
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/</guid>
+      <description>No
+ No</description>
+    </item>
     
     <item>
       <title>Logo placeholder</title>
@@ -64,15 +74,6 @@ Example from the current website, note the pre param which allows you to insert 
       
       <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/foo/</guid>
       <description>Foo foo foooooo</description>
-    </item>
-    
-    <item>
-      <title>bar</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/</link>
-      <pubDate>Sun, 18 Nov 2018 15:03:25 +0000</pubDate>
-      
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/</guid>
-      <description>Lorem ipsum.</description>
     </item>
     
     <item>

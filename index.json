@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/",
+	"title": "Foo Menu",
+	"tags": [],
+	"description": "Foo fighters",
+	"content": "No\n No\n"
+},
+{
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/logo/",
 	"title": "Logo placeholder",
 	"tags": [],
@@ -22,7 +29,7 @@
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/",
-	"title": "Bar",
+	"title": "Bar Menu",
 	"tags": [],
 	"description": "Bar ipsum",
 	"content": "Yes\n Foo foo foo foo\n  Yes\n"
@@ -82,13 +89,6 @@
 	"tags": [],
 	"description": "foo foo foo",
 	"content": "Foo foo foooooo\n"
-},
-{
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/",
-	"title": "bar",
-	"tags": [],
-	"description": "blah blah blah",
-	"content": "Lorem ipsum.\n"
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/homepage/",
