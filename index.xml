@@ -13,10 +13,10 @@
     
     <item>
       <title>Logo placeholder</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/logo/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/logo/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/logo/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/logo/</guid>
       <description>Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).
 Tip : you can add a image, a combobox with links to other documentation&amp;hellip;. Tip 2 : look at extra static menu if you want to add links to other website in this sidebar </description>
     </item>
@@ -38,10 +38,10 @@ role=&#34;alert&#34;&gt;HUGO &lt;strong&gt;v0.32&lt;/strong&gt; minimum required
     
     <item>
       <title>Extra menu entries</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/extramenu/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/extramenu/</link>
       <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/extramenu/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/extramenu/</guid>
       <description>You can define additional menu entries in the navigation menu without any link to content.
 Edit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.
 Example from the current website, note the pre param which allows you to insert HTML code and used here to separate content&amp;rsquo;s menu from this &amp;ldquo;static&amp;rdquo; menu
@@ -145,10 +145,10 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
     
     <item>
       <title>Disable features</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/disable/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/disable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/disable/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/disable/</guid>
       <description> You can disable feature in docdock by changing some params in config.toml
 hide Next / Prev Chevrons [params] disableNavChevron = true  hide Search box in side menu [params] disableSearch = true  hide the  icon in side bar [params] disableHomeIcon = true  </description>
     </item>
@@ -164,10 +164,10 @@ hide Next / Prev Chevrons [params] disableNavChevron = true  hide Search box in 
     
     <item>
       <title>Theme styles</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/themestyle/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/themestyle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/themestyle/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/themestyle/</guid>
       <description> In site configuration file, you can set a subtheme name of this theme to load a specific css.
 add a param themeStyle = &amp;quot;STYLE_NAME&amp;quot; in the [params] part of config.toml file.
 Style &amp;ldquo;original&amp;rdquo; [params] themeStyle = &amp;quot;original&amp;quot;  Style &amp;ldquo;flex&amp;rdquo; (work in progress) [params] themeStyle = &amp;quot;flex&amp;quot;  </description>
@@ -175,10 +175,10 @@ Style &amp;ldquo;original&amp;rdquo; [params] themeStyle = &amp;quot;original&am
     
     <item>
       <title>Theme variants</title>
-      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/theme-variants/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/theme-variants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/theme-variants/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/theme-variants/</guid>
       <description> In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.
 add a param themeVariant = &amp;quot;VARIANT_NAME&amp;quot; in the [params] part of config.toml file.
 Available variants change only colors at this moment Variant &amp;ldquo;gray&amp;rdquo; [params] themeVariant = &amp;quot;gray&amp;quot;  Variant &amp;ldquo;gold&amp;rdquo; [params] themeVariant = &amp;quot;gold&amp;quot;  Variant &amp;ldquo;green&amp;rdquo; [params] themeVariant = &amp;quot;green&amp;quot;`  </description>

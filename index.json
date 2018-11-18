@@ -7,7 +7,7 @@
 	"content": "No\n bar blah blah blah\n  No\n"
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/logo/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/logo/",
 	"title": "Logo placeholder",
 	"tags": [],
 	"description": "",
@@ -28,7 +28,7 @@
 	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\n Initialize Hugo Install DocDock theme Configure DocDock and Hugo  Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site .  AFTER that, initialize this as git directory where to track further changes\n$ git init  Next, there are at least three ways to install DocDock (first recommended):\n As git submodule As git clone As direct copy (from ZIP)  Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock  Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update  Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock  3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme.  download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip  Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration Follow instructions here\n"
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/extramenu/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/extramenu/",
 	"title": "Extra menu entries",
 	"tags": [],
 	"description": "",
@@ -42,7 +42,7 @@
 	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml .  Change following config.toml line as needed, depending on method above:\ntheme = \u0026quot;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026quot;  Comment out following line, so default themes/ will be used:\n# themesdir = \u0026quot;../..\u0026quot;  Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep  Preview site $ hugo server  to browse site on http://localhost:1313\nYour website\u0026rsquo;s content Find out how to create and organize your content quickly and intuitively.\n"
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/",
 	"title": "Customize website look and feel",
 	"tags": [],
 	"description": "",
@@ -56,7 +56,7 @@
 	"content": " Hugo-theme-docdock defines two types of pages. Default and Slide.\n Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file.  read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++ # Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js type=\u0026quot;page\u0026quot; # Creator's Display name creatordisplayname = \u0026quot;Valere JEANTET\u0026quot; # Creator's Email creatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; # LastModifier's Display name lastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot; # LastModifier's Email lastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; +++  Ordering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\n Read more on content organization\n"
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/",
 	"title": "Content Organization",
 	"tags": [],
 	"description": "",
@@ -154,7 +154,7 @@
 	"content": " github contributors .ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @vjeantet 247 commits   @matcornic 49 commits   @W-Floyd 24 commits   @Pilskalns 23 commits   @gwleclerc 21 commits   @lierdakil 16 commits   @jose-oc 8 commits   @SiamKreative 6 commits   @Xipas 5 commits   @altinnadmin 4 commits   @FMuro 2 commits   @EnigmaCurry 2 commits   @aral 2 commits   @adamlamar 1 commits   @byzheng 1 commits   @zivbk1 1 commits   @cmrust 1 commits   @damoon 1 commits   @vielmetti 1 commits   @erikjasiak 1 commits   @giuliov 1 commits   @farmergreg 1 commits   @jodumont 1 commits   @tarpdalton 1 commits   @jamestharpe 1 commits   @JohnBlood 1 commits   @kamilchm 1 commits   @ripienaar 1 commits   @rsanderscybraics 1 commits   @shazic 1 commits   @viertaxa 1 commits   @uweschaefer 1 commits   @wshayes 1 commits   @eyoder 1 commits   @justin-yan 1 commits   @karlmacklin 1 commits   @petzi53 1 commits   @remi31000 1 commits   @xxxtonixxx 1 commits   Other contribution  @bep supports and advices   @facette.io Flex style based on facette documentation theme, Thanks to @vbatoufflet  \nPackages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo    "
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/disable/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/disable/",
 	"title": "Disable features",
 	"tags": [],
 	"description": "",
@@ -165,7 +165,7 @@
 	"title": "DocDock Theme for Hugo",
 	"tags": [],
 	"description": "",
-	"content": " Hugo docDock theme Hugo-theme-docdock   is a theme for Hugo, a fast and modern static website engine written in Go. Hugo is often used for blogs, this theme is fully designed for documentation.\nThis theme is a partial porting of the Learn theme of matcornic  . and its default style \u0026ldquo;flex\u0026rdquo; comes from facette.io\u0026rsquo;s documentation.\ndocDock works with a \u0026ldquo;page tree structure\u0026rdquo; to organize content : All contents are pages, which belong to other pages. read more about this  Main features  Automatic Search Unlimited menu levels Generate RevealJS presentation from markdown (embededed or fullscreen page) Automatic next/prev buttons to navigate through menu entries Image resizing, shadow\u0026hellip; Attachments files List child pages Excerpt ! Include segment of content from one page in another Mermaid diagram (flowchart, sequence, gantt) Icons, Buttons, Alerts, Panels, Tip/Note/Info/Warning boxes, Expand customizable look and feel, theme style, theme variants  Layout styles This theme comes with two distinctive layout styles: Flex and Original. The main documentation is built with Flex, though available also in Original style\nStyle \u0026ldquo;Flex\u0026rdquo; (default) Style \u0026ldquo;Original\u0026rdquo; Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it Your modification will be deployed automatically when merged ! Documentation website This current documentation has been statically generated with Hugo with a simple command : hugo -t docdock \u0026ndash; source code is available here at GitHub  \nAutomated deployments Automatically published and hosted thanks to Netlify.\nRead more about Automated HUGO deployments with Netlify\n Netlify builds, deploys, and hosts frontends.  "
+	"content": " Hugo docDock theme Hugo-theme-docdock   is a theme for Hugo, a fast and modern static website engine written in Go. Hugo is often used for blogs, this theme is fully designed for documentation.\nThis theme is a partial porting of the Learn theme of matcornic  . and its default style \u0026ldquo;flex\u0026rdquo; comes from facette.io\u0026rsquo;s documentation.\ndocDock works with a \u0026ldquo;page tree structure\u0026rdquo; to organize content : All contents are pages, which belong to other pages. [read more about this]()  Main features  Automatic Search Unlimited menu levels Generate RevealJS presentation from markdown (embededed or fullscreen page) Automatic next/prev buttons to navigate through menu entries Image resizing, shadow\u0026hellip; Attachments files List child pages Excerpt ! Include segment of content from one page in another Mermaid diagram (flowchart, sequence, gantt) Icons, Buttons, Alerts, Panels, Tip/Note/Info/Warning boxes, Expand customizable look and feel, theme style, theme variants  Layout styles This theme comes with two distinctive layout styles: Flex and Original. The main documentation is built with Flex, though available also in Original style\nStyle \u0026ldquo;Flex\u0026rdquo; (default) Style \u0026ldquo;Original\u0026rdquo; Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it Your modification will be deployed automatically when merged ! Documentation website This current documentation has been statically generated with Hugo with a simple command : hugo -t docdock \u0026ndash; source code is available here at GitHub  \nAutomated deployments Automatically published and hosted thanks to Netlify.\nRead more about Automated HUGO deployments with Netlify\n Netlify builds, deploys, and hosts frontends.  "
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/showcase/",
@@ -196,14 +196,14 @@
 	"content": ""
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/themestyle/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/themestyle/",
 	"title": "Theme styles",
 	"tags": [],
 	"description": "change theme style",
 	"content": " In site configuration file, you can set a subtheme name of this theme to load a specific css.\nadd a param themeStyle = \u0026quot;STYLE_NAME\u0026quot; in the [params] part of config.toml file.\nStyle \u0026ldquo;original\u0026rdquo; [params] themeStyle = \u0026quot;original\u0026quot;  Style \u0026ldquo;flex\u0026rdquo; (work in progress) [params] themeStyle = \u0026quot;flex\u0026quot;  "
 },
 {
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/customize-style/theme-variants/",
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organization/customize-style/theme-variants/",
 	"title": "Theme variants",
 	"tags": [],
 	"description": "change theme style/colors",
