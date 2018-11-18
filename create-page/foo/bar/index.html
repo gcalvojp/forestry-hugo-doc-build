@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2018-11-18T15:27:15 UTC">
-<title>Extra menu entries :: DocDock Documentation</title>
+<title>bar :: DocDock Documentation</title>
 <link rel="shortcut icon" href="/forestry-hugo-doc-build/images/favicon.png" type="image/x-icon" />
 <link href="/forestry-hugo-doc-build/css/font-awesome.min.css" rel="stylesheet">
 <link href="/forestry-hugo-doc-build/css/nucleus.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/forestry-hugo-doc-build/content-organisation/extramenu/">
+  <body data-url="/forestry-hugo-doc-build/create-page/foo/bar/">
     
       <header>
   <div class="logo">
@@ -98,19 +98,21 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/forestry-hugo-doc-build/create-page/" class="dd-item haschildren
+    <li data-nav-id="/forestry-hugo-doc-build/create-page/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/forestry-hugo-doc-build/create-page/"><i class='fa fa-edit' ></i> Create Page</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/forestry-hugo-doc-build/create-page/"><i class='fa fa-edit' ></i> Create Page</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/" class="dd-item haschildren
+    <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/forestry-hugo-doc-build/create-page/foo/">Foo Menu</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/forestry-hugo-doc-build/create-page/foo/">Foo Menu</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/bar/" class="dd-item">
+      <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/bar/" class="dd-item active">
         <div>
           <a href="/forestry-hugo-doc-build/create-page/foo/bar/">
             bar
@@ -157,11 +159,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/forestry-hugo-doc-build/content-organisation/" class="dd-item parent haschildren
+    <li data-nav-id="/forestry-hugo-doc-build/content-organisation/" class="dd-item haschildren
         ">
       <div>
-      <a href="/forestry-hugo-doc-build/content-organisation/">Content Organization</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/forestry-hugo-doc-build/content-organisation/">Content Organization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/forestry-hugo-doc-build/content-organisation/logo/" class="dd-item">
@@ -171,7 +172,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/forestry-hugo-doc-build/content-organisation/extramenu/" class="dd-item active">
+      <li data-nav-id="/forestry-hugo-doc-build/content-organisation/extramenu/" class="dd-item">
         <div>
           <a href="/forestry-hugo-doc-build/content-organisation/extramenu/">
             Extra menu entries
@@ -406,15 +407,21 @@
       <option value="/forestry-hugo-doc-build/getting-start/configuration/" >- Configuration</option>
   
     <option value="/forestry-hugo-doc-build/create-page/" >
-   Create Page</option>
-    <option value="/forestry-hugo-doc-build/content-organisation/" >
-   Content Organization</option> 
-      <option value="/forestry-hugo-doc-build/content-organisation/logo/" >- Logo placeholder</option>
-      <option value="/forestry-hugo-doc-build/content-organisation/extramenu/"  selected>- Extra menu entries</option>
-    <option value="/forestry-hugo-doc-build/content-organisation/customize-style/" >
+   Create Page</option> 
+    <option value="/forestry-hugo-doc-build/create-page/foo/" >
   - 
-   Customize website look and feel</option>
+   Foo Menu</option> 
+      <option value="/forestry-hugo-doc-build/create-page/foo/bar/"  selected>-- bar</option>
   
+    <option value="/forestry-hugo-doc-build/create-page/bar/" >
+  - 
+   Bar Menu</option>
+      <option value="/forestry-hugo-doc-build/create-page/homepage/" >- Home page</option>
+      <option value="/forestry-hugo-doc-build/create-page/page-images/" >- About images</option>
+      <option value="/forestry-hugo-doc-build/create-page/page-slide/" >- Present a Slide</option>
+  
+    <option value="/forestry-hugo-doc-build/content-organisation/" >
+   Content Organization</option>
     <option value="/forestry-hugo-doc-build/shortcodes/" >
    Shortcodes</option>
     <option value="/forestry-hugo-doc-build/search/" >
@@ -441,43 +448,19 @@
       </div>
     
 
-    <h1>Extra menu entries</h1>
+    <h1>bar</h1>
     
     
     
-    <p>You can define additional menu entries in the navigation menu without any link to content.</p>
-
-<p>Edit the website configuration <code>config.toml</code> and add a <code>[[menu.shortcuts]]</code> entry for each link your want to add.</p>
-
-<p>Example from the current website, <strong>note the <code>pre</code> param</strong> which allows you to insert HTML code and used here to separate content&rsquo;s menu from this &ldquo;static&rdquo; menu</p>
-
-<pre><code>[[menu.shortcuts]]
-pre = &quot;&lt;h3&gt;More&lt;/h3&gt;&quot;
-name = &quot;&lt;i class='fa fa-github'&gt;&lt;/i&gt; Github repo&quot;
-identifier = &quot;ds&quot;
-url = &quot;https://github.com/vjeantet/hugo-theme-docdock&quot;
-weight = 1
-
-[[menu.shortcuts]]
-name = &quot;&lt;i class='fa fa-bookmark'&gt;&lt;/i&gt; Hugo Documentation&quot;
-identifier = &quot;hugodoc&quot;
-url = &quot;https://gohugo.io/&quot;
-weight = 2
-</code></pre>
-
-<p><a href="https://gohugo.io/extras/menus/">
-
-<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
-
- Read more about hugo and menu here</a></p>
+    <p>Lorem ipsum.</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/forestry-hugo-doc-build/content-organisation/logo/" title="Logo placeholder"> <i class="fa fa-chevron-left"></i><label>Logo placeholder</label></a>
-    <a class="nav nav-next" href="/forestry-hugo-doc-build/content-organisation/customize-style/" title="Customize website look and feel" style="margin-right: 0px;"><label>Customize website look and feel</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/forestry-hugo-doc-build/create-page/foo/" title="Foo Menu"> <i class="fa fa-chevron-left"></i><label>Foo Menu</label></a>
+    <a class="nav nav-next" href="/forestry-hugo-doc-build/create-page/bar/" title="Bar Menu" style="margin-right: 0px;"><label>Bar Menu</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -492,13 +475,13 @@ weight = 2
 
     
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 29/04/2017
+        <i class='fa fa-calendar'></i> Last update on 18/11/2018
     </div>
     
 
     
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/content-organisation/extramenu.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/create-page/foo/bar.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     

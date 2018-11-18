@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-11-18T15:25:23 UTC">
+<meta name="revised" content="2018-11-18T15:27:15 UTC">
 <title>Foo Menu :: DocDock Documentation</title>
 <link rel="shortcut icon" href="/forestry-hugo-doc-build/images/favicon.png" type="image/x-icon" />
 <link href="/forestry-hugo-doc-build/css/font-awesome.min.css" rel="stylesheet">
@@ -105,12 +105,21 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/" class="dd-item active">
+    <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/" class="dd-item parent active haschildren
+        ">
+      <div>
+      <a href="/forestry-hugo-doc-build/create-page/foo/">Foo Menu</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/forestry-hugo-doc-build/create-page/foo/bar/" class="dd-item">
         <div>
-          <a href="/forestry-hugo-doc-build/create-page/foo/">
-            Foo Menu
+          <a href="/forestry-hugo-doc-build/create-page/foo/bar/">
+            bar
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
+    </li>
+        </ul>
     </li>
     <li data-nav-id="/forestry-hugo-doc-build/create-page/bar/" class="dd-item haschildren
         ">
@@ -399,7 +408,11 @@
   
     <option value="/forestry-hugo-doc-build/create-page/" >
    Create Page</option> 
-      <option value="/forestry-hugo-doc-build/create-page/foo/"  selected>- Foo Menu</option>
+    <option value="/forestry-hugo-doc-build/create-page/foo/"  selected>
+  - 
+   Foo Menu</option> 
+      <option value="/forestry-hugo-doc-build/create-page/foo/bar/" >-- bar</option>
+  
     <option value="/forestry-hugo-doc-build/create-page/bar/" >
   - 
    Bar Menu</option>
@@ -439,14 +452,21 @@
     
     
     
-    <p>No</p>
+
+<p>No</p>
 
 
 
 <ul class="children children-h2">
+
+<span><h2>
+		<a href="/forestry-hugo-doc-build/create-page/foo/bar/" >bar</a></h2>
+<p>blah blah blah</p>
+</span>
 </ul>
 
 <p>No</p>
+
 
 
 
@@ -458,7 +478,7 @@
         <div class="chevrons">
     <div id="navigation">
 <a class="nav nav-prev" href="/forestry-hugo-doc-build/create-page/" title="Create Page"> <i class="fa fa-chevron-left"></i><label>Create Page</label></a>
-    <a class="nav nav-next" href="/forestry-hugo-doc-build/create-page/bar/" title="Bar Menu" style="margin-right: 0px;"><label>Bar Menu</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/forestry-hugo-doc-build/create-page/foo/bar/" title="bar" style="margin-right: 0px;"><label>bar</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -479,7 +499,7 @@
 
     
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/create-page/foo/index.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/create-page/foo/_index.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
     

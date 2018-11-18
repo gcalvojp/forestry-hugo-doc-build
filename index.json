@@ -4,7 +4,7 @@
 	"title": "Foo Menu",
 	"tags": [],
 	"description": "Foo fighters",
-	"content": "No\n No\n"
+	"content": "No\n bar blah blah blah\n  No\n"
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/logo/",
@@ -26,13 +26,6 @@
 	"tags": [],
 	"description": "",
 	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\n Initialize Hugo Install DocDock theme Configure DocDock and Hugo  Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site .  AFTER that, initialize this as git directory where to track further changes\n$ git init  Next, there are at least three ways to install DocDock (first recommended):\n As git submodule As git clone As direct copy (from ZIP)  Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock  Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update  Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock  3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme.  download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip  Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration Follow instructions here\n"
-},
-{
-	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/",
-	"title": "Bar Menu",
-	"tags": [],
-	"description": "Bar ipsum",
-	"content": "Yes\n Foo foo foo foo\n  Yes\n"
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/content-organisation/extramenu/",
@@ -84,11 +77,25 @@
 	"content": " Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Docdock theme uses the last improvement available in hugo version 20+ to generate a json index file ready to be consumed by lunr.js javascript search engine.\nhugo generate lunrjs index.json at the root of public folder if the site only has one language or within each language subfolder. When you build the site with hugo server, hugo generates it internally and of course it don\u0026rsquo;t show up in the filesystem "
 },
 {
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/",
+	"title": "Bar Menu",
+	"tags": [],
+	"description": "Bar ipsum",
+	"content": "Yes\n Foo foo foo foo\n  Yes\n"
+},
+{
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/bar/foo/",
 	"title": "Foo",
 	"tags": [],
 	"description": "foo foo foo",
 	"content": "Foo foo foooooo\n"
+},
+{
+	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/",
+	"title": "bar",
+	"tags": [],
+	"description": "blah blah blah",
+	"content": "Lorem ipsum.\n"
 },
 {
 	"uri": "https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/homepage/",
