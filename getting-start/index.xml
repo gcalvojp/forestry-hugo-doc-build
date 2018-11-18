@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting started on DocDock Documentation</title>
-    <link>/getting-start/</link>
+    <link>https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/</link>
     <description>Recent content in Getting started on DocDock Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/getting-start/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installation</title>
-      <link>/getting-start/installation/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-start/installation/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/installation/</guid>
       <description>&lt;div class=&#34;alert 
 alert-warning&#34;
  
@@ -27,10 +27,10 @@ role=&#34;alert&#34;&gt;HUGO &lt;strong&gt;v0.32&lt;/strong&gt; minimum required
     
     <item>
       <title>Configuration</title>
-      <link>/getting-start/configuration/</link>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-start/configuration/</guid>
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/getting-start/configuration/</guid>
       <description>&lt;p&gt;When building the website, you can set a theme by using &lt;code&gt;--theme&lt;/code&gt; option. We suggest you to edit your configuration file and set the theme by default. Example with &lt;code&gt;config.toml&lt;/code&gt; format.&lt;/p&gt;</description>
     </item>
     
