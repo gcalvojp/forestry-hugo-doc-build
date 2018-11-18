@@ -58,6 +58,15 @@ Example from the current website, note the pre param which allows you to insert 
     </item>
     
     <item>
+      <title>bar</title>
+      <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/</link>
+      <pubDate>Sun, 18 Nov 2018 15:03:25 +0000</pubDate>
+      
+      <guid>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/foo/bar/</guid>
+      <description>Lorem ipsum.</description>
+    </item>
+    
+    <item>
       <title>Home page</title>
       <link>https://gcalvojp.github.io/forestry-hugo-doc-build/create-page/homepage/</link>
       <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
